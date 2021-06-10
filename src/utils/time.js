@@ -1,0 +1,4 @@
+const SECOND_MS = 1000;
+
+export const JOKES_INTERVAL = 20 * SECOND_MS;
+export const BLACKLIST_INTERVAL = 8 * SECOND_MS;

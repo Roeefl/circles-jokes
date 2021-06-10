@@ -1,0 +1,30 @@
+@mixin centralize() {
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.react-card-flip) {
+  background: darkslategray;
+  color: white;
+  height: 100%;
+  cursor: pointer;
+}
+
+.front {
+  @include centralize();
+}
+
+.back {
+  @include centralize();
+  background: orangered;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .punchline {
+    margin-top: 16px;
+    font-weight: 700;
+  }
+}
